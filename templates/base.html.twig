@@ -63,6 +63,11 @@
 		</nav>
 		<!-- End Main Navigation -->
 
+		{% for message in app.flashes('success') %}
+			<div class="alert alert-success">{{ message }}
+			</div>
+		{% endfor %}
+		{% for message in app.flashes('error') %}{% endfor %}
 		{% block body %}{% endblock %}
 
 		<!-- Footer -->
@@ -88,6 +93,5 @@
 			</footer>
 		</div>
 		<!-- End Footer -->
-
 	</body>
-</html>
+</html></body></html>

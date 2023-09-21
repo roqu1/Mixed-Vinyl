@@ -22,7 +22,7 @@
 
 				{{ mix.votesString }}
 				votes
-				<form>
+				<form action="{{ path('app_mix_vote', {'id': mix.id} ) }}" method="POST">
 					<button type="submit" class="btn btn-outline-primary" name="direction" value="up">
 						<span class="fa fa-thumbs-up"></span>
 					</button>
